@@ -17,6 +17,7 @@ class Scraper
   def self.scrape_profile_page(profile_url)
     student_doc = Nokogiri::HTML(open(profile_url))
     
+<<<<<<< HEAD
     links = student_doc.css("div.social-icon-container a")
     array_of_links = links.collect{|link| link['href']}
     
@@ -42,6 +43,10 @@ class Scraper
 #links = student_doc.css("div.social-icon-container a")
 # links.collect{|link| link['href']}
 
+=======
+    binding.pry
+  end 
+>>>>>>> 96f222770b362dc1187f18241afa506fccbac35c
 
 end
 
